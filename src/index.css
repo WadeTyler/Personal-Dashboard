@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import "tailwindcss";
+
+:root {
+    --color-primary: #ee8a39;
+    --color-primary-dark: #ab672d;
+}
+
+* {
+    font-family: 'Open Sans', Arial, Helvetica, serif;
+}
+
+@theme {
+    --color-primary: var(--color-primary);
+    --color-primary-dark: var(--color-primary-dark);
+}
+
+.input-label {
+    @apply text-zinc-300 font-semibold text-sm;
+}
+
+.input-container {
+    @apply w-full px-4 flex flex-col items-start justify-center gap-2;
+}
+
+.input-bar {
+    @apply w-full p-2 bg-zinc-600 text-white rounded-md focus:outline-none border-zinc-500 hover:border-zinc-300 focus:border-zinc-300 focus:shadow-md border duration-200;
+}
+
+.submit-btn {
+    @apply px-4 py-2 text-center bg-primary rounded-md shadow-md text-white font-semibold hover:bg-primary-dark cursor-pointer duration-200;
+}
