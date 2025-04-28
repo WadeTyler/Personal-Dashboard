@@ -9,7 +9,7 @@ const Weather = () => {
     // Fetch forecast
     const lat = pos.coords.latitude;
     const lon = pos.coords.longitude;
-    const response = await fetch(`/api/forecast?current=temperature_2m&temperature_unit=fahrenheit&latitude=${lat}&longitude=${lon}`, {
+    const response = await fetch(`https://api.open-meteo.com/v1/forecast?current=temperature_2m&temperature_unit=fahrenheit&latitude=${lat}&longitude=${lon}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

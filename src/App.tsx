@@ -50,12 +50,6 @@ function App() {
     loadSettings();
   }, []);
 
-  // Debug UseEffect
-  // TODO: Remove
-  useEffect(() => {
-    console.log("Bookmarks: ", bookmarks);
-    console.log("Settings: ", settings);
-  }, [bookmarks, settings]);
 
   return (
     <div className="w-full h-screen flex flex-col gap-4 lg:p-8 p-4 text-white">
